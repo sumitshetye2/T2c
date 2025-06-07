@@ -5,7 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parsons Problem Generator</title>
     <link rel="icon" href="data:,"></link>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1, h2, h3 {
+        color: #2c3e50;
+    }
+
+    form {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+    }
+
+    .difficulty-group {
+        margin-bottom: 20px;
+    }
+
+    .difficulty-group h3 {
+        margin-bottom: 10px;
+        color: #34495e;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    select, input[type="range"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    output {
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    #generated-url {
+        display: inline-block;
+        margin-top: 10px;
+        color: #2980b9;
+        text-decoration: none;
+        word-wrap: break-word;
+    }
+
+    #generated-url:hover {
+        text-decoration: underline;
+    }
+
+    pre {
+        background-color: #ecf0f1;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+
+    button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+</style>
+
 <body>
     <h1>Parsons Problem Generator</h1>
     <form id="problem-form">
